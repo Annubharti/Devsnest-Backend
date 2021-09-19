@@ -1,3 +1,23 @@
 # Day 7
 ## Nodemon
 ## Express.js
+
+``` const express = require('express');
+const app = express();
+
+app.get('/annu', (req, res) => {
+    res.status(200).send({ userName: "Annu" });
+})
+
+const slash = (req,res) => {
+    res.send("Hello From Function");
+}; ```
+
+const express = require("express"); // Imported the express module from the node_modules folder.
+const app = express(); // Express passes a function definition (export = e) which we need to call before moving ahead and being able to use express.
+
+app.listen(5000);
+// We launched our local server at port 5000 where express will be listening to the requests: CRUD -> POST, GET, PUT, DELETE Operation
+
+
+
